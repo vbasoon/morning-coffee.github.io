@@ -43,5 +43,8 @@
     "vinyl-ftp": "^0.6.1",
     "webpack": "^5.51.1",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "sass-google-fonts": "^1.0.1"
   }
 }
