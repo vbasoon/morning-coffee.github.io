@@ -1,0 +1,12 @@
+.home__slider {
+  text-align: center;
+  padding: 3rem 0;
+  img {
+    height: 10rem;
+    margin: 1rem 2rem 0;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-2rem);
+    }
+  }
+}

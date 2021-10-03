@@ -6,7 +6,9 @@ menuBtn.onclick = () => {
   menuNav.classList.toggle("active");
 };
 
-menu.onscroll = () => {
-  menu.classList.remove("fa-times");
-  navbar.classList.remove("active");
-};
+let img = document.querySelectorAll(".home__slider img").forEach((images) => {
+  images.onclick = () => {
+    let src = images.getAttribute("src");
+    document.querySelector(".home__image img").src = src;
+  };
+});
