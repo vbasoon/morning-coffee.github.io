@@ -5,13 +5,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
 }
 
 h1 {
   //font-family: "Tintos";
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: $radius;
+  color: $color-main;
+  background: none;
+  border: $border-main;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  &:hover {
+    border: $border-hover;
+    border-radius: $radius-hover;
+  }
 }

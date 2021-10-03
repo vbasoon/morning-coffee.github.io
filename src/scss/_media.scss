@@ -1,0 +1,48 @@
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__menu {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      &-list {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      &-link {
+        display: block;
+        margin: 0;
+        padding: 1.5rem 2rem;
+      }
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    #menu-btn {
+      display: initial;
+      &.fa-times {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
