@@ -49,3 +49,24 @@ a {
     border-radius: $radius-hover;
   }
 }
+
+.title {
+  font-size: 9rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 0.05rem $color-main;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  pointer-events: none;
+  position: relative;
+  //color: red;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: $color-main;
+    font-size: 3rem;
+  }
+}

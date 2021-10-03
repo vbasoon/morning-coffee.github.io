@@ -9,6 +9,12 @@
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 6rem;
+    span {
+      font-size: 2.3rem;
+    }
+  }
   .header {
     &__menu {
       position: absolute;
@@ -40,6 +46,16 @@
     }
   }
 
+  .home {
+    text-align: center;
+  }
+
+  .home {
+    &__content {
+      font-size: 4rem;
+    }
+  }
+
   section {
     padding: 2rem;
   }
@@ -48,5 +64,14 @@
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .home {
+    &__image {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
   }
 }
