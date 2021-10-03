@@ -56,6 +56,19 @@
     }
   }
 
+  .menu {
+    &__content-box {
+      margin-left: 0;
+      margin-top: 6rem;
+      flex-flow: column;
+      text-align: center;
+      img {
+        margin-left: 0;
+        margin-top: -6rem;
+      }
+    }
+  }
+
   section {
     padding: 2rem;
   }
