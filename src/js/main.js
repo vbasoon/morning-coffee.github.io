@@ -6,9 +6,32 @@ menuBtn.onclick = () => {
   menuNav.classList.toggle("active");
 };
 
-let img = document.querySelectorAll(".home__slider img").forEach((images) => {
+document.querySelectorAll(".home__slider img").forEach((images) => {
   images.onclick = () => {
     let src = images.getAttribute("src");
     document.querySelector(".home__image img").src = src;
   };
+});
+
+const swiper = new Swiper(".review-slider", {
+  spaceBetween: 20,
+  centeredSlides: true,
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 7500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 0,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  },
 });
